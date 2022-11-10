@@ -1,0 +1,17 @@
+Bài 2:
+ Dựa vào mã nguồn được cung cấp sẵng sau khi thực hiện test thì phát hiện lỗi ở hàm ( getLetterScore  trong file Student.cs)
+	+ lỗi khi test điểm 7.0 phải trả về B nhưng trương trình lại trả về C.
+	+ Lỗi khi test điểm 5.0 phải trả về c nhưng trương trình lại trả về D.
+
++Sữa
+Trong file student.cs tại hàm getLetterScore:
+	Sữa tại :
+if (Score > 7.0) return 'B';
+            if (Score > 5.0) return 'C';
+	thành :
+if (Score >= 7.0) return 'B';
+            if (Score >= 5.0) return 'C';
+Như vậy sau khi thực hiện sữa lỗi thì test trương trình chạy thành công,
+
+
+
